@@ -3,7 +3,7 @@ import React from "react";
 
 export default async function page() {
   const { products: data } = await getProducts();
-  console.log(data);
+  //   console.log(data);
   return (
     <div className="">
       {/* <div>

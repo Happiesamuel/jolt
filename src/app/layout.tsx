@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={`${inter.className} 
-           flex-col bg-primary-1 my-0 mx-auto max-w-[144rem]  min-h-screen antialiased`}
+           flex-col bg-white my-0 mx-auto max-w-[144rem]  min-h-screen antialiased`}
       >
         <Header />
         {children}
