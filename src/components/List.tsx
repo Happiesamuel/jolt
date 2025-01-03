@@ -2,6 +2,7 @@ import { getShoes } from "@/lib/action";
 import { products } from "@wix/stores";
 import Image from "next/image";
 import React from "react";
+import DOMPurify from "isomorphic-dompurify";
 
 export default async function List() {
   const data = await getShoes(20, process.env.MEN_SHOES_CATEGORY_ID!);
@@ -42,7 +43,7 @@ export default async function List() {
             dangerouslySetInnerHTML={{
               __html: DOMPurify.sanitize(
                 x.additionalInfoSections!.find(
-                  (section: any) => section.title === "shortDesc"
+                  (section) => section.title === "shortDesc"
                 )?.description || ""
               ),
             }}

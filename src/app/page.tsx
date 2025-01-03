@@ -1,7 +1,3 @@
-import { getProducts, getShoes } from "@/lib/action";
-import { products } from "@wix/stores";
-import Image from "next/image";
-import DOMPurify from "isomorphic-dompurify";
 import { Suspense } from "react";
 import List from "@/components/List";
 export default async function page() {

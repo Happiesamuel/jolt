@@ -8,7 +8,7 @@ export async function getProducts() {
   return data;
 }
 
-export async function getShoes(limit = 20, id) {
+export async function getShoes(limit = 20, id: string) {
   const res = await wixClientServer();
   const data = await res.products
     .queryProducts()
