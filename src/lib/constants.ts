@@ -1,11 +1,6 @@
 export const header = [
   {
     routes: "/",
-    id: 1,
-    title: "Categories",
-  },
-  {
-    routes: "/",
     id: 2,
     title: "Deals",
   },

@@ -32,7 +32,9 @@ export default function HeaderCategory({
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Category</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-lg text-dark">
+            Category
+          </NavigationMenuTrigger>
           <NavigationMenuContent className="rounded-lg  bg-white px-8 py-6">
             <h1 className="border-b border-zinc-300 pb-3 text-xl text-dark font-semibold">
               Popular Categories
